@@ -1,5 +1,5 @@
 
-def dijkstra(graph, start_vertex=0):
+def dijkstra(graph, start_vertex=0):  # O(n * log(n))
     dist = [float("inf")] * len(graph)
     dist[start_vertex] = 0
     s = [(0, start_vertex)]
