@@ -4,6 +4,8 @@ def floyd_warshall_alg(graph):  # O(n^3)
     for k in range(n):
         for i in range(n):
             for j in range(n):
+                if i == j:
+                    graph[i][j] = 0
                 graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j])
     return graph
 
