@@ -27,5 +27,4 @@ graph = [
 ]
 
 dist = dijkstra(graph, 0)
-for i in dist:
-    print(i, end=" ")
+print(dist)
