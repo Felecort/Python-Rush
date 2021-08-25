@@ -10,7 +10,7 @@ def dfs_list(graph, used, current_vertex):
 
 
 def connected_components(graph):
-    used = [0 for _ in range(len(graph))]
+    used = [0] * len(graph)
     for i in range(len(graph)):
         if not used[i]:
             dfs_list(graph, used, i)

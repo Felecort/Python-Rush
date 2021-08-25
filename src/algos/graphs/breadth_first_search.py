@@ -1,7 +1,7 @@
 
 def bfs_list(graph):
     start_vertex = 0
-    used = [0 for _ in range(len(graph))]
+    used = [0] * len(graph)
     used[start_vertex] = 1
     q = [start_vertex]
 
@@ -17,7 +17,7 @@ def bfs_list(graph):
 
 def bfs_matrix(graph):
     start_vertex = 0
-    used = [0 for _ in range(len(graph))]
+    used = [0] * len(graph)
     used[start_vertex] = 1
     q = [start_vertex]
 
