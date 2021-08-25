@@ -26,5 +26,5 @@ graph = [
     [[7, 1], [8, 1]],
 ]
 
-dist = dijkstra(graph, 0)
-print(dist)
+for i in range(len(graph)):
+    print(dijkstra(graph, i))
