@@ -30,8 +30,8 @@ def adjacency_matrix(n, m):
         print(row)
 
 
-def adjacency_list(m):
-    matrix = [[] for _ in range(m)]
+def adjacency_list(m, n):
+    matrix = [[] for _ in range(n)]
     for i in range(m):
         a, b = [int(j) for j in input().split()]
         a -= 1
@@ -44,7 +44,7 @@ def adjacency_list(m):
         print(row)
 
 
-n, m = 5, 7
-adjacency_list(m)
+n, m = 5, 4
+adjacency_list(m, n)
 adjacency_matrix(n, m)
 list_of_edges(m)
