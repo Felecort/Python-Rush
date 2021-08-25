@@ -1,5 +1,5 @@
 def adj_list2adj_matrix(adj_list):
-    adj_matrix = [[0 for _ in range(len(adj_list))] for _ in range(len(adj_list))]
+    adj_matrix = [[float("inf") for _ in range(len(adj_list))] for _ in range(len(adj_list))]
     for i in range(len(adj_list)):
         for j in range(len(adj_list[i])):
             adj_matrix[i][adj_list[i][j][0]] = adj_list[i][j][1]
