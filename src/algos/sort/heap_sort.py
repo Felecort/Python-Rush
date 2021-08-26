@@ -10,7 +10,7 @@ def add(heap, x):  # O(log(n))
 
 
 def pop(heap):  # O(log(n))
-    heap[1],  heap[-1] =  heap[-1],  heap[1]
+    heap[1],  heap[-1] = heap[-1],  heap[1]
     heap.pop()
     ind = 1
     while ind * 2 < len(heap) and heap[ind] > heap[ind * 2] or\
