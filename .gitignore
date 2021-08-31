@@ -1,6 +1,6 @@
 venv/
 .idea/
-*checkpoint.ipynb
 __pycache__/
+*checkpoint.ipynb
 *xlsx
 *html
