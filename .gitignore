@@ -2,3 +2,4 @@ venv/
 .idea/
 *checkpoint.ipynb
 __pycache__/
+*xlsx
