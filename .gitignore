@@ -6,3 +6,5 @@ __pycache__/
 *.html
 books/
 *.pdf
+*.txt
+*.json
