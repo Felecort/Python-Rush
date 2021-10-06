@@ -1,5 +1,3 @@
-from pprint import pprint
-
 
 def whisper(text):
     return text.lower() + '...'
