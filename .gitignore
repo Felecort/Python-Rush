@@ -8,4 +8,5 @@ books/
 *.pdf
 *.txt
 *.json
+*.jpg
 bot_key.py
