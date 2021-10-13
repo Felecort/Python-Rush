@@ -1,21 +1,6 @@
 hello_message = "Hi! Choose a place you want to learn more about"
 unknown_message = "I don't understand you. Write me Hello or /help"
 
-# button_label_1 = 
-# button_1_mgs = r
-
-# button_label_2 = 
-# button_2_mgs = 
-
-# button_label_3 = 
-# button_3_mgs = 
-
-# button_label_4 = 
-# button_4_mgs = 
-
-# button_label_5 = 
-# button_5_mgs = 
-
 button_labels = [r"The Church of the Holy Virgin at the Polytechnic University",
                  r"Sports complex",
                  r"High-Voltage Building.",
@@ -28,6 +13,7 @@ button_mgs = [r"This sanctuary is a monument of architecture. It was laid in 191
               r"The Hydraulic Tower was established in 1905 as one of the oldest buildings of the university. The design of the Art Nouveau Tower was designed by architects Virrich and Padlewski. During the construction of the main building, the water supply was provided by a temporary wooden tower, which was replaced by a new stone structure. This architectural building became a place for hydrological research and an observation post for air defence during the Great Patriotic War and the blockade of Leningrad.",
               r"The complex of the Museum of History of Peter the Great Saint-Petersburg Polytechnic University includes the exhibition hall of the Main Educational Building, the exhibition of the Battle Hall of Fame and the main exhibition and foundations in the 2nd Professorial Building and also memorial and commemorative places. The museum offers visitors exhibitions of the history of the emergence and formation of the educational institution, the technical equipment of the educational process and research work, the evolution of technical means and visual aids. The Museum conducts scientific research in the field of Polytechnic University history, monumental studies, museum studies, museum education and regularly publishes the results of its research in various publications; it carries out extensive scientific, educational, excursion and professional orientation work.",]
 
+# main_parth = "./data/" # Hosting
 main_parth = r"D:\Projects\PythonProjects\Learn\src\mini_projects\bot_data"
 photos_parth = [f"{main_parth}\\church.jpg",
                 f"{main_parth}\\sport.jpg",

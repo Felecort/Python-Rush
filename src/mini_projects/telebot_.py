@@ -8,6 +8,7 @@ from telebot import types
 from telebot import TeleBot
 
 bot = TeleBot(bot_key.token)
+print("Bot started")
 
 
 def add_buttons():
