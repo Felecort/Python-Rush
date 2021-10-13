@@ -44,8 +44,8 @@ def callback_worker(call):
         if call.data == str(i):
             bot.send_photo(call.message.chat.id, PHOTO_LINKS[i])
             bot.send_message(call.message.chat.id,
-                            BUTTON_MESSAGES[i],
-                            reply_markup=keyboard_buttons)
+                             BUTTON_MESSAGES[i],
+                             reply_markup=keyboard_buttons)
 
 
 # Точка входа
