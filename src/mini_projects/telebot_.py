@@ -2,20 +2,24 @@
 @eng_abobius_bot
 """
 
-from bot_data import bot_key
+# Импортирование констант
+from bot_data.bot_key import *
 from bot_data.bot_messages import *
+
+# Импортирование API
 from telebot import types
 from telebot import TeleBot
 
-bot = TeleBot(bot_key.token)
+# Запуск бота
+bot = TeleBot(TOKEN)
 print("Bot started")
 
 
+# Создание кнопок
 def add_buttons():
-        # Подготовка кнопок
         keyboard = types.InlineKeyboardMarkup()
         for i in range(5):
-            button = types.InlineKeyboardButton(text=button_labels[i],
+            button = types.InlineKeyboardButton(text=BUTTON_LABELS[i],
                                                 callback_data=str(i))
             keyboard.add(button)
         return keyboard
@@ -26,11 +30,11 @@ def add_buttons():
 def get_text_messages(message):
     if (message.text).lower() in ("hello", "hi", "/help", "/start") :        
         bot.send_message(message.from_user.id,
-                         text=hello_message,
+                         text=HELLO_MESSAGE,
                          reply_markup=keyboard_buttons)
     else:
         bot.send_message(message.from_user.id,
-                         text=unknown_message)
+                         text=UNKNOWN_MESSAGE)
 
 
 # Обработчик нажатий на кнопки
@@ -38,13 +42,13 @@ def get_text_messages(message):
 def callback_worker(call):
     for i in range(5):
         if call.data == str(i):
-            photo = open(photos_parth[i], 'rb')
-            bot.send_photo(call.message.chat.id, photo)
+            bot.send_photo(call.message.chat.id, PHOTO_LINKS[i])
             bot.send_message(call.message.chat.id,
-                             button_mgs[i],
-                             reply_markup=keyboard_buttons)
+                            BUTTON_MESSAGES[i],
+                            reply_markup=keyboard_buttons)
 
 
+# Точка входа
 if __name__ == "__main__":
     keyboard_buttons = add_buttons()
     bot.polling(none_stop=True, interval=0)
