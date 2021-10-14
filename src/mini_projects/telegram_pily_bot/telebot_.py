@@ -17,12 +17,12 @@ print("Bot started")
 
 # Создание кнопок
 def add_buttons():
-        keyboard = types.InlineKeyboardMarkup()
-        for i in range(5):
-            button = types.InlineKeyboardButton(text=BUTTON_LABELS[i],
-                                                callback_data=str(i))
-            keyboard.add(button)
-        return keyboard
+    keyboard = types.InlineKeyboardMarkup()
+    for i in range(5):
+        button = types.InlineKeyboardButton(text=BUTTON_LABELS[i],
+                                            callback_data=str(i))
+        keyboard.add(button)
+    return keyboard
 
 
 # Обработчик сообщений
