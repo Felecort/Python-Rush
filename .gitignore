@@ -8,4 +8,5 @@ __pycache__/
 *.txt
 *.json
 *.jpg
+*.png
 bot_key.py
