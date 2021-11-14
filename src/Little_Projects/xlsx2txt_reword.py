@@ -1,7 +1,7 @@
 import openpyxl
-
+from datetime import date
 xls_parth = r"D:\Projects\PythonProjects\Learn\words.xlsx"
-txt_parth = r"D:\Projects\PythonProjects\Learn\words.txt"
+txt_parth = r"D:\Projects\PythonProjects\Learn\words_" + str(date.today()) + ".txt"
 wookbook = openpyxl.load_workbook(xls_parth)
 worksheet = wookbook.active
 
@@ -11,9 +11,9 @@ def write_in_file(row_arr, file):
     file.write(text)
 
 
-def parse_default_words(row_num):
-    
+def parse_default_words():
     with open(txt_parth, "w", encoding="UTF-8") as file:
+        row_num = 3
         while True:
             row_arr = []
             for col_num in range(2, 4):
@@ -25,5 +25,4 @@ def parse_default_words(row_num):
             row_num += 1
 
 
-ROW_NUM = 181
-parse_default_words(ROW_NUM)
+parse_default_words()
