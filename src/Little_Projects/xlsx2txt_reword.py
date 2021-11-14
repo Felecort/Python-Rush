@@ -13,7 +13,7 @@ def write_in_file(row_arr, file):
 
 def parse_default_words(row_num):
     
-    with open(txt_parth, "a", encoding="UTF-8") as file:
+    with open(txt_parth, "w", encoding="UTF-8") as file:
         while True:
             row_arr = []
             for col_num in range(2, 4):
