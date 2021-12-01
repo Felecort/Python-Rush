@@ -2,7 +2,7 @@ venv/
 .idea/
 __pycache__/
 cache/
-*checkpoint.ipynb
+output/
 *.xlsx
 *.html
 *.pdf
@@ -11,4 +11,6 @@ cache/
 *.jpg
 *.png
 bot_key.py
-output/
+*checkpoint.ipynb
+tmp_calculations.ipynb
+tmp_calculations.py
