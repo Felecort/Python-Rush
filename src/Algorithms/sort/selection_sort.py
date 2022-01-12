@@ -10,7 +10,7 @@ def selection_sort(arr):  # O(n^2) memory: O(1)
         arr[j], arr[min_ind] = arr[min_ind], arr[j]
 
 
-arr = [randint(0, 1000) for _ in range(50_000)]
+arr = [randint(0, 1000) for _ in range(5_000)]
 sr_arr = sorted(arr)
 
 selection_sort(arr)
