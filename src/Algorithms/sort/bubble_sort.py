@@ -21,7 +21,6 @@ def bubble_sort_opt(arr):  # O(n^2) memory: O(1)
             return
 
 
-
 arr = [randrange(0, 30) for _ in range(500)]
 sr_arr = sorted(arr)
 
