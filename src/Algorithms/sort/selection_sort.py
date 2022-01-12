@@ -1,4 +1,5 @@
-from random import randint, randrange
+
+from random import randint
 
 
 def selection_sort(arr):  # O(n^2) memory: O(1)

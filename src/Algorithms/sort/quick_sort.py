@@ -22,13 +22,14 @@ def partition(arr, i, j):  # O(n^2) -- O(n * log(n)) memory: O(1)
 def quick_sort_(arr, i, j):
     if i == j:
         return
-    pivot = partition(arr, i, j) # [i, pivot - 1] < pivot, [pivot + 1 , j] >= pivot
+    pivot = partition(arr, i, j)  # [i, pivot - 1] < pivot, [pivot + 1 , j] >= pivot
     quick_sort_(arr, i, pivot)
     quick_sort_(arr, pivot + 1, j)
 
 
 def quick_sort(arr):
     quick_sort_(arr, 0, len(arr))
+
 
 arr = [randrange(0, 30) for _ in range(200)]
 sr_arr = sorted(arr)

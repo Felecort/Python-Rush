@@ -1,5 +1,5 @@
 import snoop
-from random import randint, randrange
+from random import randint
 
 
 @snoop

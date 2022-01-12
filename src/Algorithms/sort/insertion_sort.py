@@ -1,5 +1,6 @@
 from random import randrange
 
+
 # Подходит для маленького количества элементов
 # Особенно для почти отсортированных массивов
 def insertion_sort(arr): # O(n^2), memory: O(1)

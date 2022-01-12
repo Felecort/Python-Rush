@@ -1,4 +1,4 @@
-from random import randint, randrange
+from random import randint
 import heartrate
 heartrate.trace(browser=True)
 
