@@ -22,8 +22,7 @@ def bubble_sort_opt(arr):  # O(n^2) memory: O(1)
 
 
 
-arr = [randrange(0, 30) for _ in range(4)]
-print(arr)
+arr = [randrange(0, 30) for _ in range(5_000)]
 sr_arr = sorted(arr)
 
 bubble_sort_opt(arr)
