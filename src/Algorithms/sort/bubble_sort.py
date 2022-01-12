@@ -22,9 +22,9 @@ def bubble_sort_opt(arr):  # O(n^2) memory: O(1)
 
 
 
-arr = [randrange(0, 30) for _ in range(5_000)]
+arr = [randrange(0, 30) for _ in range(500)]
 sr_arr = sorted(arr)
 
 bubble_sort_opt(arr)
 
-print(arr, "\n", sr_arr == arr)
+print(sr_arr == arr)
