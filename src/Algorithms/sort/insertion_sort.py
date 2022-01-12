@@ -3,7 +3,7 @@ from random import randrange
 
 # Подходит для маленького количества элементов
 # Особенно для почти отсортированных массивов
-def insertion_sort(arr): # O(n^2), memory: O(1)
+def insertion_sort(arr):  # O(n^2), memory: O(1)
     for i in range(1, len(arr)):
         cur = arr[i]
         j = i - 1
