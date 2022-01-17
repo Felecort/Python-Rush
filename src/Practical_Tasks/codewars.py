@@ -8,5 +8,6 @@ def doubles(maxk, maxn):
     return summa
 
 
-c = doubles(10, 100)
-print(c)
+if __name__ == "__main__":
+    c = doubles(10, 100)
+    print(c)

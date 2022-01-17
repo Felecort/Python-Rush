@@ -21,12 +21,13 @@ def parse_default_xlsx_file():
             row_num += 1
 
 
-GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\words"
+if __name__ == "__main__":
+    GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\words"
 
-parth_2_xlsx_file = f"{GENERAL_PARTH}.xlsx"
-parth_2_txt_file = f"{GENERAL_PARTH}_{date.today()}.txt"
+    parth_2_xlsx_file = f"{GENERAL_PARTH}.xlsx"
+    parth_2_txt_file = f"{GENERAL_PARTH}_{date.today()}.txt"
 
-wookbook = openpyxl.load_workbook(parth_2_xlsx_file)
-worksheet = wookbook.active
+    wookbook = openpyxl.load_workbook(parth_2_xlsx_file)
+    worksheet = wookbook.active
 
-parse_default_xlsx_file()
+    parse_default_xlsx_file()
