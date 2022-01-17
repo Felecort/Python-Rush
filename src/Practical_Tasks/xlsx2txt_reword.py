@@ -21,7 +21,7 @@ def parse_default_xlsx_file():
             row_num += 1
 
 
-GENERAL_PARTH = r"D:\Projects\PythonProjects\Learn\words"
+GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\words"
 
 parth_2_xlsx_file = f"{GENERAL_PARTH}.xlsx"
 parth_2_txt_file = f"{GENERAL_PARTH}_{date.today()}.txt"
