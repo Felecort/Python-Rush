@@ -13,3 +13,4 @@ output/
 bot_key.py
 *checkpoint.ipynb
 tmp_files/
+data/
