@@ -12,5 +12,5 @@ output/
 *.png
 bot_key.py
 *checkpoint.ipynb
-tmp_files/
 data/
+tmp_*
