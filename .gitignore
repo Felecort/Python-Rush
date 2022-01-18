@@ -1,8 +1,17 @@
+
+#  Folders
 venv/
 .idea/
 __pycache__/
 cache/
 output/
+data/
+
+#  Files
+tmp_*
+bot_key.py
+
+#  File extensions
 *.xlsx
 *.html
 *.pdf
@@ -10,7 +19,5 @@ output/
 *.json
 *.jpg
 *.png
-bot_key.py
 *checkpoint.ipynb
-data/
-tmp_*
+*.csv
