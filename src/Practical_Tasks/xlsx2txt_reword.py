@@ -22,7 +22,7 @@ def parse_default_xlsx_file():
 
 
 if __name__ == "__main__":
-    GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\words"
+    GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\reword\words"
 
     parth_2_xlsx_file = f"{GENERAL_PARTH}.xlsx"
     parth_2_txt_file = f"{GENERAL_PARTH}_{date.today()}.txt"
