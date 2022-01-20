@@ -3,7 +3,8 @@ if __name__ == "__main__":
     more_my_res = 0
     less_my_res = 0
     MY_SCORE = 250
-    with open("data/SPBPU_full.txt", "r", encoding="UTF-8") as file:
+    with open(r"D:\Projects\PythonProjects\Python-rush\data\SPBPU_full.txt",
+        "r", encoding="UTF-8") as file:
         data = file.read().split()
         for user_score in data:
             if user_score.isdigit():
