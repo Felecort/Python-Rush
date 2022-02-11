@@ -1,6 +1,7 @@
 from random import randint
 from traceback import print_list
 
+
 def get_rand_value():
     return randint(20, 250)
 
