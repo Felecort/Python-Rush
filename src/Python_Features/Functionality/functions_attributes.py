@@ -1,8 +1,4 @@
 
-def foo():
-    pass
-
-
 def func(x):
     func.power2 = x ** 2
     func.power4 = func.power2 ** 2
