@@ -6,6 +6,9 @@ def foo(a, b):
 
 
 class TestMy(unittest.TestCase):
+    # Существует очень много функций для 
+    # тестов, аналогичных assertEqual
+
     # False
     def test_1(self):
         z = foo(1, 2)
