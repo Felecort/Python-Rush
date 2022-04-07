@@ -54,7 +54,7 @@ class Launch:
                 self._countdown -= 1
                 return Op.WAIT, 1
         if self._state is State.LAUNCHING:
-            print(f"Rocket Launched!")
+            print("Rocket Launched!")
             return Op.STOP, None
         assert False, self._state
 
