@@ -1,33 +1,33 @@
-import openpyxl
 from datetime import date
+import pandas as pd
 
 
-def write_in_file(row_arr, file):
-    text = f'\"{row_arr[0]}\";\"{row_arr[1]}\"\n'
-    file.write(text)
+def get_data(path):
+    data = pd.read_excel(path, header=2, usecols="B,C")
+    e_words = data["English"].to_numpy()
+    r_words = data["Russian"].to_numpy()
+    return e_words, r_words
 
 
-def parse_default_xlsx_file():
-    with open(parth_2_txt_file, "w", encoding="UTF-8") as file:
-        row_num = 3
-        while True:
-            row_arr = []
-            for col_num in range(2, 4):
-                cell = worksheet.cell(row=row_num, column=col_num).value
-                if not cell:
-                    return
-                row_arr.append(cell)
-            write_in_file(row_arr, file)
-            row_num += 1
+def parse_data(e_words, r_words):
+    arr = []
+    arr_append = arr.append
+    for i in range(len(e_words)):
+        arr_append(f'"{e_words[i]}";"{r_words[i]}"\n')
+    return arr
+
+
+def write_data(arr, path):
+    with open(path, "w", encoding="utf8") as f:
+        for line in arr:
+            f.write(line)
 
 
 if __name__ == "__main__":
-    GENERAL_PARTH = r"D:\Projects\PythonProjects\Python-rush\data\reword\words"
+    GENERAL_PARTH = "./data"
+    parth_2_xlsx_file = f"{GENERAL_PARTH}/reword.xlsx"
+    parth_2_txt_file = f"{GENERAL_PARTH}/reword_{date.today()}.txt"
 
-    parth_2_xlsx_file = f"{GENERAL_PARTH}.xlsx"
-    parth_2_txt_file = f"{GENERAL_PARTH}_{date.today()}.txt"
-
-    wookbook = openpyxl.load_workbook(parth_2_xlsx_file)
-    worksheet = wookbook.active
-
-    parse_default_xlsx_file()
+    e_words, r_words = get_data(parth_2_xlsx_file)
+    data = parse_data(e_words, r_words)
+    write_data(data, parth_2_txt_file)
