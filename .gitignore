@@ -15,7 +15,6 @@ bot_key.py
 *.xlsx
 *.html
 *.pdf
-*.txt
 *.json
 *.jpg
 *.png
