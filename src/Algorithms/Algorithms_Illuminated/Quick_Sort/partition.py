@@ -12,10 +12,10 @@ def partition(arr):
 
 
 if __name__ == "__main__":
-    for _ in range(10_000):
+    for _ in range(1_000_000):
         arr = [randint(1, 30) for _ in range(10)]
+        arr_copy = arr[:]
         left = partition(arr)
-        
-        if not all([i <= (arr[left]) for i in range(0, left)]):
-            print(arr, left)
 
+        if not all([arr[i] <= (arr[left]) for i in range(0, left)]):
+            print(arr_copy, arr, left)
