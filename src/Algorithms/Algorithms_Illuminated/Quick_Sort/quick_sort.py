@@ -1,8 +1,8 @@
 import random
 
 
-def choose_pivot(arr, l, r):
-    pass
+def choose_pivot(l, r):
+    return random.randint(l, r)
 
 
 def partition(arr, l, r):
@@ -25,7 +25,7 @@ def quick_sort_(arr, l, r):
     j = partition(arr, l, r)
     quick_sort_(arr, l, j - 1)
     quick_sort_(arr, j + 1, r)
-    
+
 
 def quick_sort(arr):
     quick_sort_(arr, ..., ...)
