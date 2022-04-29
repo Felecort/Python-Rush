@@ -28,7 +28,7 @@ def quick_sort_(arr, l, r):
 
 
 def quick_sort(arr):
-    quick_sort_(arr, ..., ...)
+    quick_sort_(arr, 0, len(arr))
 
 
 if __name__ == "__main__":
