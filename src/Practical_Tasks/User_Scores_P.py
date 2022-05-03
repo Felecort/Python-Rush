@@ -1,9 +1,10 @@
 
-if __name__ == "__main__":
+def main():
+    path = "your path"
     more_my_res = 0
     less_my_res = 0
     MY_SCORE = 250
-    path = "your path"
+    
     with open(path, "r", encoding="UTF-8") as file:
         data = file.read().split()
         for user_score in data:
@@ -16,3 +17,7 @@ if __name__ == "__main__":
     print(more_my_res)
     print(less_my_res)
     print(f"Лучше: {better_result_persent * 100:.1f}%")
+
+
+if __name__ == "__main__":
+    main()
