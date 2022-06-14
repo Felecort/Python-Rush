@@ -5,7 +5,6 @@ venv/
 __pycache__/
 cache/
 output/
-data/
 
 #  Files
 tmp_*
