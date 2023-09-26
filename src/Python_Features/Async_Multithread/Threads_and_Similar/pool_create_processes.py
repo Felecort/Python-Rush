@@ -1,6 +1,6 @@
 import multiprocessing as mp
 import os
-from decimal import Decimal
+
 
 def to_celsius(f):
     c = (f - 32) * (5 / 9)
@@ -9,7 +9,9 @@ def to_celsius(f):
 
 
 if __name__ == "__main__":
-    print(os.getpid())
     mp.set_start_method("spawn")
-    p = mp.Process(target=to_celsius, args=(110, ))
-    p.start()
+    with mp.Pool(4) as pool:
+        pool.map(to_celsius, range(110, 150, 10))
+    print("=" * 23)
+    with mp.Pool(4, maxtasksperchild=1) as pool:
+        pool.map(to_celsius, range(110, 150, 10))
